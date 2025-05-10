@@ -62,5 +62,5 @@ lr_schedule = ExponentialDecay(
 sgd = SGD(learning_rate=lr_schedule, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 hist = model.fit(train_x, train_y, epochs=200, batch_size=5, verbose=1)
-model.save('model.h5', hist)
+model.save('model.h5')
 print("Model created")

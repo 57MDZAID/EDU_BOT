@@ -19,11 +19,6 @@
          "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
          "context": [""]
         },
-        {"tag": "options",
-         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-         "responses": ["I can guide you throug"],
-         "context": [""]
-        },
         {"tag": "admission",
          "patterns": ["yes I want","i want take admission in MANUU"],
          "responses": ["you want admission in UG or PG"],
@@ -31,17 +26,17 @@
         },
         {"tag": "UG",
          "patterns": ["UG course","I want to take admission in  UG","UG"],
-         "responses": ["B.Tech / BA / BSc / BEd"],
+         "responses": ["B.Tech <br> BA <br> BSc <br> BEd"],
          "context": [""]
         },
         {"tag": "B.Tech",
          "patterns": ["B.tech CS","BTech","btech","b.tech","admission in B.tech"],
-         "responses": ["B.Tech (CS) Regular / B.Tech(CS) Letral Entry"],
+         "responses": ["1 : B.Tech (CS) Regular<br>2 : B.Tech(CS) Letral Entry"],
          "context": [""]
         },
         {"tag": "B.Tech (CS) Regular",
          "patterns": ["B.Tech Regular","regular","CS regular","BTech cs regular","btech regular"],
-         "responses": ["Regular Intake / Regular ELigibility / B.Tech (CS) Syllabus / Admission Process"],
+         "responses": ["1 : Regular Intake<br>2 : Regular ELigibility<br>3 : B.Tech (CS) Syllabus<br>4 : Admission Process in BTech"],
          "context": [""]
         },
         {"tag": "B.Tech (CS) Regular Intake",
@@ -61,7 +56,7 @@
         },
         {"tag": "B.Tech (CS) Regular Eligibility Criteria",
          "patterns": ["B.Tech Regular Eligibility Criteria","regular Eligibility Criteria","CS regular eligibility Criteria","BTech cs regular eligibility Criteria","btech regular eligibility Criteria","B.tech regular eligibility Criteria"],
-         "responses": ["Regular Eligibility Criteria : i. Urdu as a subject/language or as a Medium in 10th/12th level or equivalent Madrasa courses with Urdu as medium of Instruction approvedby MANUU.  ii.Passed 10+2 examination with Physics, Mathematics and for remainingsingle course select any course out of the following:Chemistry/ Computer Science/Electronics/Information Technology/ Biology/ Informatics Practices/ Biotechnology/ Technical Vocational subject/ Agriculture/ Engineering Graphics/ Business Studies/Entrepreneurship and Obtained at least 45% marks (40%marks incase of candidates belonging to reserved category) in the above subjects taken together. OR Passed min. 3 years Diploma examination with at least 45%marks (40%marks in case of candidates belonging to reserved category) subject tovacancies in the First Year, in case the vacancies at lateral entry areexhausted.","B.Tech Syllabus : https://manuu.edu.in/sites/default/files/CSIT/btech-locf-syllabus.pdf"],
+         "responses": ["Regular Eligibility Criteria : <br>i : Urdu as a subject/language or as a Medium in 10th/12th level or equivalent Madrasa courses with Urdu as medium of Instruction approvedby MANUU.<br>ii : Passed 10+2 examination with Physics, Mathematics and for remainingsingle course select any course out of the following:<br> Chemistry<br> Computer Science<br> Electronics<br> Information Technology<br> Biology<br> Informatics Practices<br> Biotechnology<br> Technical Vocational subject<br> Agriculture<br> Engineering Graphics<br> Business Studies<br>Entrepreneurship and Obtained at least 45% marks (40%marks incase of candidates belonging to reserved category) in the above subjects taken together. OR Passed min. 3 years Diploma examination with at least 45%marks (40%marks in case of candidates belonging to reserved category) subject tovacancies in the First Year, in case the vacancies at lateral entry areexhausted."],
          "context": [""]
         },
         {"tag": "B.Tech (CS)  Syllabus",
@@ -70,19 +65,89 @@
          "context": [""]
         },
         {"tag": "B.Tech (CS)  Admission Process",
-         "patterns": ["B.Tech  Admission Process","B.Tech CS Admission Process","BTech cs  Admission Process","btech  Admission Process","B.tech  Admission Process"],
-         "responses": ["B.Tech (CS) Admission Process : Entrance Based(ET)  /  Last date for Submission of filled-in Application Forms,28th May, 2023  /  Form open for Editing for ET based programme,7th and 8th June, 2023  /  Issue of Admit Card for ET based programme,12th June, 2023  /  Dates of ET Exams,20th, 21st and 22nd June, 2023  /  Application cum Registration Fee ET Based  /  Exam Center"],
+         "patterns": ["Admission Process in Btech","B.Tech CS Admission Process","BTech cs  Admission Process","btech  Admission Process","B.tech  Admission Process"],
+         "responses": ["1 : B.Tech (CS) Admission Process : Entrance Based(ET)<br> 2 : Last date for Submission of filled-in Application Forms,28th May, 2023<br>3 : Form open for Editing for ET based programme,7th and 8th June, 2023<br>4 : Issue of Admit Card for ET based programme,12th June, 2023<br>5 :  Dates of ET Exams,20th, 21st and 22nd June, 2023<br>6 : Application cum Registration Fee ET Based<br>7 : Exam Center"],
          "context": [""]
         },
         {"tag": "Application cum Registration Fee ET Based",
          "patterns": ["Registration Fee ET Based","Application form Fee ET Based","Application form Fee ","Registration Fee","Application form Registration Fee"],
-         "responses": ["Fee Payment through Online Mode only  /  General Category Candidates:Rs. 550.00  /  SC/ST/PWD/OBC(Non-creamy Layer)/Women Candidates:Rs. 350.00   /  Foreign students:Rs. 2500.00"],
+         "responses": ["1 : Fee Payment through Online Mode only <br>2 : General Category Candidates : Rs. 550.00 <br>3 : SC/ST/PWD/OBC(Non-creamy Layer)/Women Candidates : Rs. 350.00<br>4 : Foreign students:Rs. 2500.00"],
          "context": [""]
         },
         {"tag": "Exam Center",
          "patterns": ["exam center","EXAM CENTER","center for entrance exam"],
-         "responses": ["Asansol (WB), Aurangabad(MS),Bengaluru(KS), Bhopal (MP), Bidar (KS) Cuttack(Odisha),Darbhanga(Bihar),Delhi (NCR), Gaya (Bihar)Hyderabad(TS), Jammu(J&K)Kadapa (AP), Kishanganj (Bihar),Kargil (J&K), Lucknow(UP), Nuh (Haryana)Patna (Bihar), Ranchi(Jharkand)Sambal (UP), Siwan(Bihar), Srinagar (J&K),Varanasi (UP),"],
+         "responses": ["Asansol (WB)<br> Aurangabad(MS)<br>Bengaluru(KS)<br> Bhopal (MP)<br> Bidar (KS) Cuttack(Odisha)<br>Darbhanga(Bihar)<br>Delhi (NCR)<br> Gaya (Bihar)Hyderabad(TS)<br> Jammu(J&K)Kadapa (AP)<br> Kishanganj (Bihar)<br>Kargil (J&K)<br> Lucknow(UP)<br> Nuh (Haryana)Patna (Bihar)<br> Ranchi(Jharkand)Sambal (UP)<br> Siwan(Bihar)<br> Srinagar (J&K)<br>Varanasi (UP)<br>"],
          "context": [""]
-        }
+        },
+        {"tag": "BSc",
+         "patterns": ["admision in bsc","I want to take admission in bsc","BSC","BSc"],
+         "responses": ["BSc(Physics) <br> BSc(Mathematics) <br> BSc(Chemistry) <br> BSc(computer Science)"],
+         "context": [""]
+        },
+        {"tag": "BSc Physics",
+         "patterns": ["Bsc physics","bsc physics"," bsc physics"],
+         "responses": ["1 : Total Seat in BSc Physics <br>2 : Addmission Process<br>3 : Eligibility criteria<br>4 : Course Duration in BSc physics"],
+         "context": [""]
+        },
+        {"tag": "BSc Mathematics",
+         "patterns": ["Bsc Mathematics","bsc Maths"," bsc mathematics","bsc math"],
+         "responses": ["1 : Total Seat in BSc Mathematics <br>2 : Addmission Process in BSc Mathematics<br>3 : Eligibility criteria in BSc Mathematics<br>4 : Course Duration in BSc Mathematics"],
+         "context": [""]
+        },
+        {"tag": "BSc Chemistry",
+         "patterns": ["Bsc Chemistry","bsc Chemistry"," bsc chemistry"],
+         "responses": ["1 : Total Seat in BSc Chemistry <br>2 : Admission Process in BSc Chemistry<br>3 : Eligibility criteria for BSc Chemistry<br>4 : Course Duration in BSc Chemistry"],
+         "context": [""]
+        },
+        {"tag": "BSc Computer Science",
+         "patterns": ["Bsc Computer Science","bsc Computer Science"," bsc Computer Science"],
+         "responses": ["1 : Total Seat in BSc Computer Science <br>2 : Addmission Process in BSc Computer Science<br>3 : Eligibility criteria in BSc Computer Science<br>4 : Course Duration in BSc Computer Science"],
+         "context": [""]
+        },
+        {"tag": "Admission Process",
+         "patterns": ["Admission process","addmision process"," addmission proces"],
+         "responses": ["1 : Admission Process in B.Tech <br>2 : Admission Process in BSc<br>3 : Admission Process in BEd<br>4 : Admission Process in M.Tech<br>5 : Admission Process in MCA<br>6 : Admission Process in BA"],
+         "context": [""]
+        },
+        {"tag": "BEd",
+         "patterns": ["admision in BEd","BEd","BEd"],
+         "responses": ["1: BEd(Physical Science)<br>BEd(Biological Science)<br>BEd(Mathematics)<br>BEd Social Studies<br>BEd Urdu<br>BEd English<br>BEd hindi<br>Total Seat in BEd<br>Course Duration in BED<br>Eligibility Criteria for BEd"],
+         "context": [""]
+        },
+        {"tag": "Admission process in BEd",
+         "patterns": ["admision in BEd","Admission in bed"],
+         "responses": ["1 : Admission Process in BEd : Entrance Based(ET)<br> 2 : Last date for Submission of filled-in Application Forms,28th May, 2023<br>3 : Form open for Editing for ET based programme,7th and 8th June, 2023<br>4 : Issue of Admit Card for ET based programme,12th June, 2023<br>5 :  Dates of ET Exams,20th, 21st and 22nd June, 2023<br>6 : Application cum Registration Fee ET Based<br>7 : Exam Center"],
+         "context": [""]
+        },
+        {"tag": "BEd",
+        "patterns": ["admision in BA","I want to take admission in BEd","BEd","BEd"],
+        "responses": ["1: BEd(Physical Science)<br>BEd(Biological Science)<br>BEd(Mathematics)<br>BEd Social Studies<br>BEd Urdu<br>BEd English<br>BEd hindi<br>Total Seat in BEd<br>Course Duration in BED<br>Eligibility Criteria for BEd"],
+        "context": [""]
+        },
+        {"tag": "total intake in BEd ",
+        "patterns": ["total seat in BEd","Seat in BEd"],
+        "responses": ["100 at each CTE"],
+        "context": [""]
+        },
+        {"tag": "Eligibility criteria for BEd ",
+        "patterns": ["Eligibility Criteria in BEd","Eligibality in BEd"],
+        "responses": ["i : Urdu as a subject/language or as a Medium in 10th/12th / Graduation level or equivalent Madrasa courses with Urdu as medium of Instruction approved by MANUU.<br> ii. Candidates with at least fifty percent marks either in the Bachelor’s Degree and/or in the Master’s Degree in Sciences/Social Sciences/Humanity, Bachelor's in Engineering or Technology with specialization in Science and Mathematics with 55% marks or any other qualification equivalent thereto, are eligible for admission to the programme.<br>iii. Candidate should opt one pedagogy subject in accordance with their subjects at graduation level. List of specialization and percentage of seats<br> (a) Mathematics 20%* <br>(b) Physical Sciences 15%*<br> (c) Biological Sciences 20%* <br>(d)  Social Studies 25%* <br>(e)  Urdu 10%* <br>(f) English 05%* <br>(g) Hindi 05%* <br>* In case the number of qualified candidates in any subject is less than the number of seats fixed for the subject, the remaining seats will be filled up with the candidates of other subjects. "],
+        "context": [""]
+       },
+       {"tag": "total intake in BSc ",
+       "patterns": ["total seat in BSc","Seat in BSc"],
+       "responses": ["1 : Mathematics, Physics<br>2. Mathematics, Chemistry<br>3. Mathematics, Computer Science<br>4. Physics, Chemistry<br>5. Physics, Computer Science<br> 100 at each CTE"],
+       "context": [""]
+       },
+       {"tag": "Eligibility criteria for BSc ",
+       "patterns": ["Eligibility Criteria in BSc","Eligibality in BSc"],
+       "responses": ["i : Urdu as a subject/language or as aMedium in 10th /12th level or equivalent Madrasa courses with Urdu as medium of Instruction approved by MANUU. (Refer the list appended in the Prospectus)<br>ii. 10+2 or Equivalent from recognized board/ institution with 40% marks inaggregate. Candidates should have studied Maths, Physics & Chemistry at 10+2 level.   "],
+       "context": [""]
+      },
+      {"tag": "Admission process in BSc",
+       "patterns": ["admision in BSc","Admission in BSc"],
+       "responses": ["1 : Admission Process in BSc : Entrance Based(ET)<br> 2 : Last date for Submission of filled-in Application Forms,28th May, 2023<br>3 : Form open for Editing for ET based programme,7th and 8th June, 2023<br>4 : Issue of Admit Card for ET based programme,12th June, 2023<br>5 :  Dates of ET Exams,20th, 21st and 22nd June, 2023<br>6 : Application cum Registration Fee ET Based<br>7 : Exam Center"],
+       "context": [""]
+      }
    ]
 }
